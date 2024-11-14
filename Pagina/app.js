@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Código para el e-commerce
+    // Codigo main para la pagina
     if (document.body.classList.contains('ecommerce')) {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Si estamos en la página del carrito, mostrar la tabla
+        // Mostrar la tabla en la pagina del carrito
         const cartTable = document.getElementById('cart-table');
         if (cartTable) {
             const tbody = cartTable.querySelector('tbody');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('cart-total').textContent = `Total: $${total.toFixed(2)}`;
             }
 
-            // Agregar función para vaciar el carrito
+            // Funcion para vaciar el carrito
             function clearCart() {
                 cart = [];
                 localStorage.setItem('cart', JSON.stringify(cart));
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateCartTotal();
             }
 
-            // Agregar evento al botón de vaciar carrito
+            // Evento para el boton de vaciar el carrito 
             const clearCartButton = document.getElementById('clear-cart');
             if (clearCartButton) {
                 clearCartButton.addEventListener('click', () => {
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCartDisplay();
         }
 
-        // Agregar evento al botón de finalizar compra
+        // Evento para el boton de finalizar compra 
         const checkoutButton = document.getElementById('checkout');
         if (checkoutButton) {
             checkoutButton.addEventListener('click', () => {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Manejar el formulario de checkout
+        // Formulario del checkout
         const checkoutForm = document.getElementById('checkout-form');
         if (checkoutForm) {
             checkoutForm.addEventListener('submit', (event) => {
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Actualizar el total inicial
+        //Actualizar el total del carrito 
         updateCartTotal();
     }
     
