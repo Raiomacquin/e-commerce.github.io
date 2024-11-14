@@ -1,4 +1,4 @@
-/* Estilos existentes */
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #000; /* Fondo negro */
+    background-color: #000; 
     background-image: url('../Imagenes/imagen1.jpg'); 
     background-size: cover;
     background-position: center;
@@ -15,33 +15,33 @@ body {
 }
 
 .login-container {
-    background-color: #000; /* Fondo negro */
+    background-color: #000; 
     padding: 2rem;
     border-radius: 8px;
-    border: 2px solid #fff; /* Bordes blancos */
+    border: 2px solid #fff; 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    color: #fff; /* Texto blanco */
+    color: #fff; 
 }
 
 .login-container h2 {
     margin-bottom: 1rem;
-    color: #fff; /* Texto blanco */
+    color: #fff; 
 }
 
 .login-container label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #fff; /* Texto blanco */
+    color: #fff; 
 }
 
 .login-container input {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #fff; /* Bordes blancos */
+    border: 1px solid #fff; 
     border-radius: 4px;
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
+    background-color: #000; 
+    color: #fff; 
 }
 
 .login-container button {
@@ -58,11 +58,11 @@ body {
     background-color: #0056b3;
 }
 
-/* Nuevos estilos para la página de e-commerce */
+
 body.ecommerce {
     display: block;
-    background-color: #f0f0f0; /* Fondo claro para la página de e-commerce */
-    background-image: url('../Imagenes/fondo.jpg'); /* Ruta a tu imagen de fondo */
+    background-color: #f0f0f0; 
+    background-image: url('../Imagenes/fondo.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -128,7 +128,7 @@ main {
 .title {
     text-align: center;
     margin-bottom: 2rem;
-    color: #f7f2f2; /* Cambia este valor al color que desees */
+    color: #f7f2f2; 
     background-color: #181717;
     padding: 1rem;
     border-radius: 8px;
@@ -143,7 +143,7 @@ main {
 .title-cart {
     text-align: center;
     margin-bottom: 2rem;
-    color: #f7f2f2; /* Cambia este valor al color que desees */
+    color: #f7f2f2; 
     background-color: #181717;
     padding: 1rem;
     border-radius: 8px;
@@ -164,7 +164,7 @@ main {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin-top: 12rem; /* Ajusta este valor según sea necesario */
+    margin-top: 12rem; 
 }
 
 .product {
@@ -176,15 +176,15 @@ main {
     text-align: center;
 }
 
-/* Cambiar el color del texto de los productos */
+
 .product h3, .product p {
-    color: #f7f5f5; /* Cambia este valor al color que desees */
+    color: #f7f5f5; 
 }
 
 .product img {
     width: 100%;
     height: auto;
-    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+    border-radius: 8px 8px 0 0; 
 }
 
 .product h3 {
@@ -321,18 +321,3 @@ main {
     background-color: #218838;
 }
 
-@media (max-width: 768px) {
-    body, body.ecommerce {
-        background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-        background-position: center; /* Centra la imagen */
-    }
-
-    .products-container {
-        margin-top: 5rem; /* Ajusta este valor según sea necesario para dispositivos móviles */
-    }
-
-    .title {
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente para dispositivos móviles */
-        padding: 0.5rem; /* Ajusta el padding para dispositivos móviles */
-    }
-}
